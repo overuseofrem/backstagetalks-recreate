@@ -29,5 +29,5 @@ body {
 
 /* Image */
 .issue-img {
-        @apply w-[23rem] h-[30rem] object-cover shadow-xl;
+        @apply w-[23rem] h-[30rem] object-cover shadow-[0_0_25px_rgba(0,0,0,0.3)];
 }
