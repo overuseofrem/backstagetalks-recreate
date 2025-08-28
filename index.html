@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="/dist/style.css">
 </head>
 
-<body class="overflow-x-hidden min-h-screen flex flex-col justify-between m-0 p-4 font-font font-weight">
+<body class="overflow-x-hidden min-h-screen flex flex-col justify-between m-0 p-0 font-font font-weight">
 
     <!-- Header that shows the website title -->
-    <header class="text-2xl">
+    <header class="text-2xl pl-4 pt-4 absolute">
         <h1>BACKSTAGE TALKS</h1>
 
         <!-- This is only shown on large screens -->
@@ -21,16 +21,15 @@
     </header>
 
     <!-- Main content (issues) -->
-    <main class="">
+    <main class="w-full">
 
-        <!-- Issue template -->
-        <div class="">
-            <img src="" alt="">
-            <h2>Issue #8</h2>
-            <a href="">BUY HERE</a>
-            <p>
-                or in <a href="">selected stores</a>
-            </p>
+        <!-- Issue -->
+        <div class="flex flex-col justify-center items-center gap-5 min-h-screen bg-[#fade00]">
+            <img src="assets/dan-gold-dzlv9k-7dAY-unsplash.jpg" alt="the yellow issue" class="w-3/4 h-3/4 shadow-lg">
+            <h2 class="mt-4">by DAN GOLD</h2>
+            <a href="https://unsplash.com/@danielcgold?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                class="text-white hover:underline">
+                SEE HERE</a>
         </div>
 
     </main>
@@ -39,7 +38,7 @@
 
     </div>
 
-    <footer class="flex flex-col gap-7 text-center text-xl">
+    <footer class="flex flex-col gap-7 text-center text-xl p-4 pb-16">
         <div class="flex flex-col gap-1">
             <p> Backstage Talks is a magazine of casual, but in depth dialogues on design and business. Our decisions
                 shape and influence this complex world—to have a chance to make the right ones, we need to talk. </p>
