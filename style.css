@@ -21,6 +21,13 @@
         # SHARED CLASSES
    ================================================================= */
 
+/* Body, for bg transitions */
+body {
+        @apply overflow-x-hidden min-h-screen flex flex-col justify-between m-0 p-0 font-font font-weight;
+        transition: background-color 0.5s ease-in-out;
+}
+
+/* Image */
 .issue-img {
-        @apply w-72 h-96 object-cover shadow-lg;
+        @apply w-[23rem] h-[30rem] object-cover shadow-xl;
 }
