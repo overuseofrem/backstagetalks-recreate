@@ -8,15 +8,20 @@
     <!-- Stylesheet link -->
     <link rel="stylesheet" href="/dist/style.css">
 </head>
-<body>
+<body class="overflow-x-hidden min-h-screen flex flex-col justify-between m-0 p-4 border border-red-600 font-font font-weight">
     
-    <header>
+    <!-- Header that shows the website title -->
+    <header class="border border-red-600 text-2xl">
         <h1>BACKSTAGE TALKS</h1>
-        <a href="" class="">info@backstagetalks.com</a>
+
+        <!-- This is only shown on large screens -->
+        <a href="" class="hidden">info@backstagetalks.com</a>
     </header>
 
-    <main class="">
+    <!-- Main content (issues) -->
+    <main class="border border-red-600">
 
+        <!-- Issue template -->
         <div class="">
             <img src="" alt="">
             <h2>Issue #8</h2>
@@ -29,17 +34,15 @@
     </main>
 
     <div class="">
-
-
         
     </div>
 
-    <footer>
+    <footer class="border border-red-600 flex flex-col gap-7 text-center text-lg">
         <div class="">
             <p> Backstage Talks is a magazine of casual, but in depth dialogues on design and business. Our decisions shape and influence this complex world—to have a chance to make the right ones, we need to talk. </p>
-            <p>© 2025 <a href="">Published by Büro Milk</a></p>
+            <p class="font-light">© 2025 <a href="#" class="underline hover:no-underline">Published by Büro Milk</a></p>
         </div>
-        <div class="">
+        <div class="flex flex-col gap-10">
             <a href="">Privacy Policy</a>
             <a href="" class="">info@backstagetalks.com</a>
         </div>

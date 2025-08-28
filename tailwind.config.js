@@ -2,7 +2,16 @@
 module.exports = {
   content: ["./*.{html,css,js}"],
   theme: {
-    extend: {},
+    extend: {
+      // Typography!
+      // Font Family
+      fontFamily: {
+        font: ['Roboto Condensed', 'sans serif'],   // All fonts
+      },
+      fontWeight: {
+        weight: 'bold',
+      },
+    },
   },
   plugins: [],
 }
