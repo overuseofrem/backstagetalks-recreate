@@ -46,10 +46,10 @@ This is a **work in progress**!
 
 #### Page structure (HTML)
 - [ ] Build the 'first issue' template
-- [ ] Build the header (just the website title rlly)
+- [x] Build the header (just the website title rlly)
 - [ ] Use the 'issue' template for the other issues
-- [ ] Build the mini 'about' section
-- [ ] Build the link to help page (info@backstagetalks.com) and Privacy Policy link
+- [x] Build the mini 'about' section
+- [x] Build the link to help page (info@backstagetalks.com) and Privacy Policy link
 - [ ] Build the issue# links (in desktop)
 - [ ] Set anchor links
 
