@@ -28,7 +28,8 @@ The goal is to recerate the structure, appearance, and behavior of the **Backsta
 
 - HTML5
 - Tailwind CSS
-- 
+- Javascript
+
 <br>
 
 ## 📷 Sources
@@ -45,19 +46,21 @@ The goal is to recerate the structure, appearance, and behavior of the **Backsta
 This is a **work in progress**!
 
 #### Page structure (HTML)
-- [ ] Build the 'first issue' template
+- [x] Build the 'first issue' template
 - [x] Build the header (just the website title rlly)
-- [ ] Use the 'issue' template for the other issues
+- [x] Use the 'issue' template for the other issues
 - [x] Build the mini 'about' section
 - [x] Build the link to help page (info@backstagetalks.com) and Privacy Policy link
-- [ ] Build the issue# links (in desktop)
-- [ ] Set anchor links
+- [x] Build the issue# links (in desktop)
+- [x] Set anchor links
 
 #### Styling (Tailwind)
-- [ ] Mobile first (top:header, mid:issue, end:text)
-- [ ] Color-changing
+- [x] Mobile first (top:header, mid:issue, end:text)
 - [ ] Snap-scroll
 - [ ] Style the four corners of text
+
+#### Javascript
+- [ ] Color-changing
 
 #### Final stuff
 - [ ] Final code cleanup and commenting
