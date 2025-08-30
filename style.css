@@ -23,7 +23,7 @@
 
 /* Body, for bg transitions */
 body {
-        @apply overflow-x-hidden min-h-screen flex flex-col justify-between m-0 p-0 font-font font-weight snap-mandatory transition-colors duration-500;
+        @apply overflow-x-hidden min-h-screen flex flex-col justify-between m-0 p-0 font-font font-weight snap-y snap-mandatory transition-colors duration-500;
 }
 
 /* Issue container */
