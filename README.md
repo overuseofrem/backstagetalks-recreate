@@ -2,7 +2,7 @@
 
 A responsive front-end recreation of the [Backstage Talks Magazine](https://backstagetalks.com/) website. This is a self-directed challenge from [Frontend Practice](https://www.frontendpractice.com/projects/backstage-talks).
 
-👉 None yet...🍕
+👉 
 
 <br>
 
@@ -56,11 +56,11 @@ This is a **work in progress**!
 
 #### Styling (Tailwind)
 - [x] Mobile first (top:header, mid:issue, end:text)
-- [ ] Snap-scroll
-- [ ] Style the four corners of text
+- [x] Snap-scroll
+- [x] Style the four corners of text
 
 #### Javascript
-- [ ] Color-changing
+- [x] Color-changing
 
 #### Final stuff
 - [ ] Final code cleanup and commenting
