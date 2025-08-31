@@ -16,6 +16,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Smooth scrolling */
+html {
+        scroll-bahvior: smooth;
+}
 
 /* ===============================================================
         # SHARED CLASSES
