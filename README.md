@@ -2,7 +2,7 @@
 
 A responsive front-end recreation of the [Backstage Talks Magazine](https://backstagetalks.com/) website. This is a self-directed challenge from [Frontend Practice](https://www.frontendpractice.com/projects/backstage-talks).
 
-👉 
+👉 [Github Page link](https://overuseofrem.github.io/backstagetalks-recreate/)
 
 <br>
 
@@ -64,8 +64,8 @@ This is a **work in progress**!
 
 #### Final stuff
 - [ ] Final code cleanup and commenting
-- [ ] Deploy the site to Github Pages
-- [ ] Add the live site link to the top of the README
+- [x] Deploy the site to Github Pages
+- [x] Add the live site link to the top of the README
 
 <br>
 
