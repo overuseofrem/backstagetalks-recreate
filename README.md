@@ -10,7 +10,7 @@ A responsive front-end recreation of the [Backstage Talks Magazine](https://back
 
 The goal is to recerate the structure, appearance, and behavior of the **Backstage Talks website**. Specifically, the preview page that Frontend Practice provides.
 
-> ❗This is a personal practice project! all banding, content, and design elements remain the property of Ableton. This clone is for educational, recreational, and non-commercial use only.
+> ❗This is a personal practice project! all banding, content, and design elements remain the property of Backstage Talks. This clone is for educational, recreational, and non-commercial use only.
 > Images, and text may be replaced with placeholders or free-to-use alternatives.
 
 <br>
@@ -21,6 +21,7 @@ The goal is to recerate the structure, appearance, and behavior of the **Backsta
 - Responsive design
 - Tailwind!
 - Layout, hover states, and interaction mimicry (attempt)
+- The cool color-changing effect
 
 <br>
 
@@ -43,7 +44,7 @@ The goal is to recerate the structure, appearance, and behavior of the **Backsta
 
 ## ⏳ Status
 
-This is a **work in progress**!
+This is **completed**! 🥳
 
 #### Page structure (HTML)
 - [x] Build the 'first issue' template
@@ -63,7 +64,7 @@ This is a **work in progress**!
 - [x] Color-changing
 
 #### Final stuff
-- [ ] Final code cleanup and commenting
+- [x] Final code cleanup and commenting
 - [x] Deploy the site to Github Pages
 - [x] Add the live site link to the top of the README
 
