@@ -1,18 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  // Configure files to scan for Tailwind classes.
   content: ["./*.{html,css,js}"],
+  
   theme: {
     extend: {
-      // Typography!
-      // Font Family
+      // Define custom font families.
       fontFamily: {
-        font: ['Roboto Condensed', 'sans serif'],   // All fonts
+        // 'font-sans' will now use 'Roboto Condensed'.
+        // This is a more standard key than 'font-font'.
+        sans: ['Roboto Condensed', 'sans-serif'],
       },
-      fontWeight: {
-        weight: 'bold',
-      },
+      // Note: Removed the custom fontWeight. It's better to use
+      // Tailwind's built-in 'font-bold' class directly in the HTML
+      // for more control and clarity.
     },
   },
+  
   plugins: [],
 }
-

@@ -1,41 +1,63 @@
 /*
  *  FILE: style.css
  *  DESCRIPTION:
- *  - Defines optional styles
+ *  - Imports Google Fonts and Tailwind CSS.
+ *  - Defines global styles and custom utility classes.
 */
 
 /* =================================================================
-        # IMPORTS
-   ================================================================= */
+    #IMPORTS
+================================================================= */
 
-/* Google Fonts */
+/* Import the 'Roboto Condensed' font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Tailwind */
+/* Import Tailwind's base styles, components, and utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Smooth scrolling */
+/* ===============================================================
+    #GLOBAL STYLES
+================================================================= */
+
+/* Enable smooth scrolling for anchor links (e.g., #issue-8) */
 html {
-        scroll-bahvior: smooth;
+    scroll-behavior: smooth;
+}
+
+/* Base styles for the entire page */
+body {
+    @apply 
+        overflow-x-hidden       /* Prevent horizontal scrolling */
+        min-h-screen            /* Ensure body is at least the height of the viewport */
+        flex flex-col            /* Use flexbox for layout */
+        justify-between         /* Pushes footer down on short pages */
+        m-0 p-0                 /* Reset default margin and padding */
+        font-sans               /* Apply custom 'Roboto Condensed' font */
+        transition-colors       /* Animate background-color changes */
+        duration-700;           /* Set transition duration to 700ms */
 }
 
 /* ===============================================================
-        # SHARED CLASSES
-   ================================================================= */
+    #CUSTOM COMPONENT CLASSES
+================================================================= */
 
-/* Body, for bg transitions */
-body {
-        @apply overflow-x-hidden min-h-screen flex flex-col justify-between m-0 p-0 font-font font-weight transition-colors duration-700;
-}
-
-/* Issue container */
+/* Styles for each issue container */
 .issue {
-        @apply flex flex-col justify-center items-center gap-5 min-h-screen snap-start;
+    @apply 
+        flex flex-col           /* Arrange content vertically */
+        justify-center          /* Center content vertically */
+        items-center            /* Center content horizontally */
+        gap-5                   /* Add space between child elements */
+        min-h-screen            /* Ensure each section takes up the full screen height */
+        snap-start;             /* Snap to the start of this element when scrolling */
 }
 
-/* Image */
+/* Styles for the issue's cover image */
 .issue-img {
-        @apply w-[23rem] h-[30rem] object-cover shadow-[0_0_25px_rgba(0,0,0,0.3)];
+    @apply 
+        w-[23rem] h-[30rem]     /* Set fixed width and height */
+        object-cover            /* Ensure the image covers the area without distortion */
+        shadow-[0_0_25px_rgba(0,0,0,0.3)]; /* Add a subtle shadow */
 }

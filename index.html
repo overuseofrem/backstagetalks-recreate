@@ -6,120 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Backstage Talks - Recreate</title>
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicons/android-icon-192x192.png">
+    <!-- 
+      Favicon Links:
+      - The 'icon' link is the primary favicon.
+      - The 'apple-touch-icon' is for iOS devices.
+      - The 'manifest' links to a file with more metadata for PWAs.
+      - This is a simplified set that covers most modern browsers and devices.
+    -->
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="assets/favicons/apple-icon-180x180.png">
     <link rel="manifest" href="assets/favicons/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- Stylesheet link -->
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="./dist/style.css">
 </head>
 
-<body>
+<!-- Added font-bold here to apply the base bold style, which was previously in the CSS -->
+<body class="font-bold">
 
-    <!-- Header that shows the website title -->
-    <header class="w-full text-2xl px-4 pt-4 absolute sm:text-4xl lg:fixed flex justify-between">
+    <!-- Header: Contains the main title and contact email -->
+    <header class="w-full text-2xl px-4 pt-4 absolute sm:text-4xl lg:fixed flex justify-between z-10">
         <h1>BACKSTAGE TALKS</h1>
-
-        <!-- This is only shown on large screens -->
-        <a href="" class="text-xl hidden lg:block hover:underline">info@backstagetalks.com</a>
+        <!-- Email link, only visible on large screens (lg and up) -->
+        <a href="mailto:info@backstagetalks.com" class="text-xl hidden lg:block hover:underline">info@backstagetalks.com</a>
     </header>
 
-    <!-- Main content (issues) -->
+    <!-- Main Content: A scrollable container for all the magazine issues -->
+    <!-- On large screens, it becomes a full-height scroll-snapping container -->
     <main class="w-full lg:h-screen lg:overflow-y-scroll lg:snap-y lg:snap-mandatory">
 
-        <!-- Issue(s) -->
+        <!-- 
+          Issue Section Template:
+          - Each 'section' is a full-height, scroll-snapping item.
+          - 'data-color' attribute is used by JavaScript to change the background color.
+          - Using <section> instead of <div> is more semantic for distinct parts of a page.
+        -->
 
-        <!-- #8 -->
-        <div id="issue-8" class="issue" data-color="#fade00">
+        <!-- Issue #8 -->
+        <section id="issue-8" class="issue" data-color="#fade00">
             <img src="assets/dan-gold-dzlv9k-7dAY-unsplash.jpg" alt="the yellow issue" class="issue-img">
             <h2 class="mt-4">by DAN GOLD</h2>
             <a href="https://unsplash.com/@danielcgold?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
                 class="text-white hover:underline">
                 SEE HERE</a>
-        </div>
+        </section>
 
-        <!-- #7 -->
-        <div id="issue-7" class="issue" data-color="#fec2c1">
+        <!-- Issue #7 -->
+        <section id="issue-7" class="issue" data-color="#fec2c1">
             <img src="assets/mae-mu-_C5zsV_p-YI-unsplash.jpg" alt="the pink issue" class="issue-img">
             <h2 class="mt-4">by MAE MU</h2>
             <a href="https://unsplash.com/@picoftasty?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
                 class="text-white hover:underline">
                 SEE HERE</a>
-        </div>
+        </section>
         
-        <!-- #6 -->
-        <div id="issue-6" class="issue" data-color="#ffffff">
+        <!-- Issue #6 -->
+        <section id="issue-6" class="issue" data-color="#ffffff">
             <img src="assets/adam-birkett-lkNa1eg2d18-unsplash.jpg" alt="the white issue" class="issue-img">
             <h2 class="mt-4">by ADAM BIRKETT</h2>
+            <!-- Note: Text color is different here to be visible on the white background -->
             <a href="https://unsplash.com/@abrkett?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
                 class="text-pink-400 hover:underline">
                 SEE HERE</a>
-        </div>
+        </section>
 
-        <!-- #5 -->
-        <div id="issue-5" class="issue" data-color="#20a13e">
+        <!-- Issue #5 -->
+        <section id="issue-5" class="issue" data-color="#20a13e">
             <img src="assets/pexels-desertedinurban-4462781.jpg" alt="the green issue" class="issue-img">
             <h2 class="mt-4">by ANTONIO DILLARD</h2>
             <a href="https://www.pexels.com/@desertedinurban/"
                 class="text-white hover:underline">
                 SEE HERE</a>
-        </div>
+        </section>
 
-        <!-- #4 -->
-        <div id="issue-4" class="issue" data-color="#fa7113">
-            <img src="assets/ambrose-chua-zxbNbuncq1g-unsplash.jpg"the orange issue" class="issue-img">
+        <!-- Issue #4 -->
+        <section id="issue-4" class="issue" data-color="#fa7113">
+            <img src="assets/ambrose-chua-zxbNbuncq1g-unsplash.jpg" alt="the orange issue" class="issue-img">
             <h2 class="mt-4">by AMBROSE CHUA</h2>
             <a href="https://unsplash.com/@serverwentdown?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
                 class="text-white hover:underline">
                 SEE HERE</a>
-        </div>
+        </section>
 
-        <!-- #3 -->
-        <div id="issue-3" class="issue" data-color="#87c2c6">
+        <!-- Issue #3 -->
+        <section id="issue-3" class="issue" data-color="#87c2c6">
             <img src="assets/pexels-shottrotter-2249958.jpg" alt="the blue issue" class="issue-img">
             <h2 class="mt-4">by TOM SWINNEN</h2>
             <a href="https://www.pexels.com/@shottrotter/"
                 class="text-white hover:underline">
                 SEE HERE</a>
-        </div>
+        </section>
 
-        <!-- #2 -->
-        <div id="issue-2" class="issue" data-color="#9852e6">
+        <!-- Issue #2 -->
+        <section id="issue-2" class="issue" data-color="#9852e6">
             <img src="assets/daniele-levis-pelusi--ZjNje5zg0I-unsplash.jpg" alt="the purple issue" class="issue-img">
             <h2 class="mt-4">by DANIELE LEVIS PELUSI</h2>
             <a href="https://unsplash.com/@yogidan2012"
                 class="text-white hover:underline">
                 SEE HERE</a>
-        </div>
+        </section>
 
-        <!-- #1 -->
-        <div id="issue-1" class="issue" data-color="#d10520">
+        <!-- Issue #1 -->
+        <section id="issue-1" class="issue" data-color="#d10520">
             <img src="assets/pexels-shvetsa-4045697.jpg" alt="the red issue" class="issue-img">
             <h2 class="mt-4">by ANNA SHVETS</h2>
             <a href="https://www.pexels.com/@shvetsa/"
                 class="text-white hover:underline">
                 SEE HERE</a>
-        </div>
-
+        </section>
     </main>
 
-    <!-- Issue links (large screens only) -->
-    <div class="hidden lg:flex flex-col font-normal fixed right-0 bottom-0 pr-4 pb-4 text-xl">
+    <!-- Issue Navigation Links (for large screens only) -->
+    <!-- Using <nav> is more semantic for a block of navigation links -->
+    <nav class="hidden lg:flex flex-col font-normal fixed right-0 bottom-0 pr-4 pb-4 text-xl z-10">
         <a href="#issue-8" class="hover:underline">Issue #8</a>
         <a href="#issue-7" class="hover:underline">Issue #7</a>
         <a href="#issue-6" class="hover:underline">Issue #6</a>
@@ -128,11 +128,11 @@
         <a href="#issue-3" class="hover:underline">Issue #3</a>
         <a href="#issue-2" class="hover:underline">Issue #2</a>
         <a href="#issue-1" class="hover:underline">Issue #1</a>
-    </div>
+    </nav>
 
-    <!-- Mini-about-us, privacy policy, mobile info email -->
-    <footer class="flex flex-col gap-7 text-center text-xl p-4 pb-16 sm:pb-5 lg:fixed left-0 bottom-0 pl-4 pb-4">
-        <div class="flex flex-col gap-1 sm:text-left w-72 gap-2">
+    <!-- Footer: Contains about text, legal links, and mobile email link -->
+    <footer class="flex flex-col gap-7 text-center text-xl p-4 pb-16 sm:pb-5 lg:fixed left-0 bottom-0 lg:pl-4 lg:pb-4 z-10">
+        <div class="flex flex-col gap-1 sm:text-left w-72">
             <p> Backstage Talks is a magazine of casual, but in depth dialogues on design and business. Our decisions
                 shape and influence this complex world—to have a chance to make the right ones, we need to talk. </p>
             <p class="font-light text-xs">
@@ -140,13 +140,14 @@
             </p>
         </div>
         <div class="flex flex-col gap-10 sm:flex-row justify-between">
-            <a href="" class="underline hover:no-underline">Privacy Policy</a>
-            <a href="" class="hover:underline lg:hidden">info@backstagetalks.com</a>
+            <a href="#" class="underline hover:no-underline">Privacy Policy</a>
+            <!-- Email link, hidden on large screens (lg and up) -->
+            <a href="mailto:info@backstagetalks.com" class="hover:underline lg:hidden">info@backstagetalks.com</a>
         </div>
     </footer>
 
+    <!-- Script tag at the end of the body for faster page load -->
+    <script src="script.js"></script>
+
 </body>
-
-<script src="script.js"></script>
-
 </html>
